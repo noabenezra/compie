@@ -6,7 +6,7 @@ angular.module('myApp', ['ngMaterial'])
     $scope.showAdvanced = function (ev) {
       $mdDialog.show({
         controller: DialogController,
-        templateUrl: 'Dialog.html',
+        template: '<div class="dialog"><div class="search"><input class="search-input" type="text" ng-model="query" placeholder="Search for names.." title="Type in a name"></div><div><span ng-repeat="photo in photoList | filter:query"><span><a href="{{photo.url}}"><img src={{photo.url}} title={{photo.title}}/></a></span></span></div><div><md-button class="button" ng-click="cancel()">Exit</md-button></div></div>',
         parent: angular.element(document.body),
         targetEvent: ev,
         clickOutsideToClose: false,
