@@ -1,11 +1,8 @@
 .dialog
-{
-    
-width:400px;
-height:80%;
-
+{   
+    width:400px;
+    height:80%;
 }
- 
 img {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -13,15 +10,13 @@ img {
     width: 150px;
     height: 110;
 }
-
 .md-dialog {
     box-shadow: 0 0 2px 2px grey !important;
     border-radius: 10px !important;
 }
 .search
 {
-    padding: 20px;
-    
+    padding: 20px;  
 }
 .search-input
 {
@@ -33,5 +28,4 @@ img {
     border-style: solid;
     border-color: #a9a9a9;
     margin-left: 23px;
-
 }
