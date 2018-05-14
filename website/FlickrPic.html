@@ -3,12 +3,17 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+  <link rel="stylesheet" href="Dialog.css">
+  <link rel="stylesheet" href="FlickrPic.css">
 </head>
 
 <body ng-app="myApp" ng-cloak>
 
-  <div ng-controller="AppCtrl">
-    <md-button ng-click="showAdvanced($event)">Go To Your Photos</md-button>
+  <div ng-controller="AppCtrl" class="wrapper">
+    <div class="hello">Hello Noa</div>
+    <div>
+      <md-button  ng-click="showAdvanced($event)">Please Click Here To See Your Photos</md-button>
+    </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>

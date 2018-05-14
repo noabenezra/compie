@@ -1,0 +1,14 @@
+.wrapper
+{
+    text-align: center;
+}
+md-button {
+    position: absolute;
+    top: 50%;
+}
+.hello
+{
+    padding-top: 50px;
+    font-weight: bold;
+    color:black;
+}

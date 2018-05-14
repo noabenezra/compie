@@ -1,20 +1,15 @@
-<ul>
-    <li>
-        <img src= $scope.photoList alt="" class="first">
-    </li>
-    <li>
-        <img src="/sites/default/files/imagefield_thumbs/MLF rev.jpg" alt="" class="">
-    </li>
-    <li>
-        <img src="/sites/default/files/imagefield_thumbs/TAMTF A.jpg" alt="" class="">
-    </li>
-    <li>
-        <img src="/sites/default/files/imagefield_thumbs/unltd-logo.png" alt="" class="">
-    </li>
-    <li>
-        <img src="/sites/default/files/imagefield_thumbs/CECILYS HIGH RES.jpg" alt="" class="">
-    </li>
-    <li>
-        <img src="/sites/default/files/imagefield_thumbs/Street Child Africa.jpg" alt="" class="last">
-    </li>
-</ul>
+<div class="dialog" >
+    <div class="search">
+        <input class="search-input" type="text" ng-model="query" placeholder="Search for names.." title="Type in a name">
+    </div>
+    <span ng-repeat="photo in photoList | filter:query">
+        <span>
+            <a href="{{photo.url}}">
+                <img src={{photo.url}} title={{photo.title}}/>
+            </a>
+        </span>
+    </span>
+    <div>
+            <md-button class="button" ng-click="cancel()">Exit</md-button>
+    </div>
+</div>
